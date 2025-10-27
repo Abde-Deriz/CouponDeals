@@ -1,0 +1,6 @@
+# Allow all web crawlers full access to the site for maximum SEO visibility.
+User-agent: *
+Allow: /
+
+# Point crawlers to the sitemap for efficient page discovery.
+Sitemap: https://temu-promo-code-hub.com/sitemap.xml

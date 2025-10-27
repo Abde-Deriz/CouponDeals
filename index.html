@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon-Dkpclo6v.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== BASIC / REQUIRED ===================== -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{PAGE_TITLE}</title>
+  <meta name="description" content="{ONE_SENTENCE_VALUE_PROP_WITH_KEYWORDS}" />
+  <link rel="canonical" href="https://{domain}/{canonical_path}" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+
+  <!-- ===================== BRAND / THEMING ===================== -->
+  <meta name="application-name" content="{SITE_NAME}" />
+  <meta name="theme-color" content="{#THEME_COLOR}" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="format-detection" content="telephone=no,email=no,address=no" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- ===================== PERFORMANCE HINTS ===================== -->
+  <link rel="preconnect" href="https://{cdn_domain}" crossorigin />
+  <link rel="dns-prefetch" href="https://{cdn_domain}" />
+  <link rel="preload" as="image" href="https://{domain}/images/{hero_image}.jpg"
+    imagesrcset="https://{domain}/images/{hero_image}@2x.jpg 2x" />
+
+  <!-- ===================== ICONS / PWA ===================== -->
+  <link rel="icon" href="https://{domain}/images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="https://{domain}/images/favicon.svg" />
+  <link rel="apple-touch-icon" href="https://{domain}/apple-touch-icon.png" />
+  <link rel="manifest" href="https://{domain}/site.webmanifest" />
+
+  <!-- ===================== OPEN GRAPH (FACEBOOK, LINKEDIN, ETC.) ===================== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{SITE_NAME}" />
+  <meta property="og:title" content="{OG_TITLE}" />
+  <meta property="og:description" content="{OG_DESCRIPTION}" />
+  <meta property="og:url" content="https://{domain}/{canonical_path}" />
+  <meta property="og:image" content="https://{domain}/og/{og_image}.jpg" />
+  <meta property="og:image:alt" content="{OG_IMAGE_ALT}" />
+  <meta property="og:locale" content="{og_locale_ex: en_US}" />
+  <meta property="og:updated_time" content="{YYYY-MM-DDTHH:MM:SSZ}" />
+
+  <!-- ===================== TWITTER CARDS ===================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@{twitter_handle}" />
+  <meta name="twitter:title" content="{TW_TITLE}" />
+  <meta name="twitter:description" content="{TW_DESCRIPTION}" />
+  <meta name="twitter:image" content="https://{domain}/og/{og_image}.jpg" />
+  <meta name="twitter:image:alt" content="{OG_IMAGE_ALT}" />
+
+  <!-- ===================== ALT / MULTI-LINGUAL (OPTIONAL) ===================== -->
+  <link rel="alternate" href="https://{domain}/{canonical_path}" hreflang="x-default" />
+  <link rel="alternate" href="https://{domain}/en/{canonical_path}" hreflang="en" />
+  <link rel="alternate" href="https://{domain}/fr/{canonical_path}" hreflang="fr" />
+  <link rel="alternate" href="https://{domain}/es/{canonical_path}" hreflang="es" />
+
+  <!-- ===================== COUPONS/DEALS SEO HINTS (OPTIONAL) ===================== -->
+  <meta name="rating" content="general" />
+  <meta name="distribution" content="global" />
+  <meta name="sailthru.tags" content="{primary_keywords_comma_separated}" />
+  <meta name="sailthru.date" content="{YYYY-MM-DD}" />
+
+  <!-- ===================== STRUCTURED TITLES FOR SNIPPETS (HUMAN-FRIENDLY) ===================== -->
+  <meta property="article:section" content="{primary_topic_ex: Coupons & Deals}" />
+  <meta property="article:tag" content="{tag_1}" />
+  <meta property="article:tag" content="{tag_2}" />
+  <meta property="article:tag" content="{tag_3}" />
+
+  <!-- ===================== PAGE-SPECIFIC VARIABLES (EDIT THESE) ===================== 
+{PAGE_TITLE}                      e.g., "Temu Promo Codes & Deals — Save Today (October {YYYY})"
+{ONE_SENTENCE_VALUE_PROP_WITH_KEYWORDS}  e.g., "Verified Temu promo codes, coupons, and flash offers—updated daily. Save on {top_categories}."
+{SITE_NAME}                       e.g., "DealBee"
+{domain}                          e.g., "dealbee.com"
+{canonical_path}                  e.g., ""  (for homepage) or "temu-promo-codes"
+{#THEME_COLOR}                    e.g., "#F97316"
+{cdn_domain}                      e.g., "cdn.dealbee.com"
+{hero_image}                      e.g., "hero-temu-coupons"
+{OG_TITLE}                        e.g., "Temu Promo Codes & Coupons (Updated Daily)"
+{OG_DESCRIPTION}                  e.g., "Instant savings with verified Temu codes. Free shipping, sitewide % off, app-only bonuses."
+{og_image}                        e.g., "temu-coupons-cover"
+{OG_IMAGE_ALT}                    e.g., "Temu coupons and promo codes collage"
+{og_locale_ex}                    e.g., "en_US"
+{YYYY-MM-DDTHH:MM:SSZ}            e.g., "2025-10-26T10:00:00Z"
+{twitter_handle}                  e.g., "DealBee"
+{TW_TITLE}                        e.g., "Today’s Temu Promo Codes & Best Offers"
+{TW_DESCRIPTION}                  e.g., "Working Temu coupons you can copy & apply now."
+{primary_keywords_comma_separated} e.g., "temu,coupons,promo codes,deals,offers,free shipping"
+{YYYY-MM-DD}                      e.g., "2025-10-26"
+{primary_topic_ex}                e.g., "Coupons & Deals"
+{tag_1},{tag_2},{tag_3}           e.g., "Temu,Promo Codes,Deals"
+==================================================================== -->
+
+
+  <!-- SCHEMA: ORGANIZATION -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://{{your-domain}}/#organization",
+  "name": "{{Your Site Name}}",
+  "url": "https://{{your-domain}}/",
+  "logo": "https://{{your-domain}}/logo.svg",
+  "sameAs": [
+    "https://www.facebook.com/{{handle}}",
+    "https://x.com/{{handle}}",
+    "https://www.pinterest.com/{{handle}}"
+  ],
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "support@{{your-domain}}",
+    "availableLanguage": ["en","fr","es"],
+    "areaServed": "Worldwide"
+  }]
+}
+</script>
+
+  <!-- SCHEMA: WEBSITE + SEARCHACTION -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://{{your-domain}}/#website",
+  "name": "{{Your Site Name}}",
+  "url": "https://{{your-domain}}/",
+  "publisher": { "@id": "https://{{your-domain}}/#organization" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://{{your-domain}}/search?q={query}",
+    "query-input": "required name=query"
+  }
+}
+</script>
+
+  <!-- SCHEMA: BREADCRUMBS -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://{{your-domain}}/#breadcrumbs",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://{{your-domain}}/" },
+    { "@type": "ListItem", "position": 2, "name": "Coupons & Deals", "item": "https://{{your-domain}}/#coupons" }
+  ]
+}
+</script>
+
+  <!-- SCHEMA: OFFER CATALOG + ITEMLIST (Coupons/Deals) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": "https://{{your-domain}}/#coupons",
+  "name": "{{Brand}} Coupons & Deals",
+  "url": "https://{{your-domain}}/#coupons",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Offer",
+        "@id": "https://{{your-domain}}/o/sitewide-{{CODE1}}",
+        "name": "{{Discount}}% Off Sitewide (Code {{CODE1}})",
+        "url": "https://{{your-domain}}/go/{{brand}}-sitewide-{{CODE1}}",
+        "description": "Use code {{CODE1}} for {{Discount}}% off eligible items. Exclusions may apply.",
+        "priceCurrency": "{{Currency}}",
+        "price": "0",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "{{2025-10-01}}",
+        "priceValidUntil": "{{2025-10-31}}",
+        "seller": { "@type": "Organization", "name": "{{Brand}}" },
+        "eligibleRegion": "Worldwide",
+        "category": "PromoCode"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Offer",
+        "@id": "https://{{your-domain}}/o/free-shipping",
+        "name": "Free Shipping on {{MinSpend}}+",
+        "url": "https://{{your-domain}}/go/{{brand}}-free-shipping",
+        "description": "Free standard shipping on orders {{MinSpend}}+.",
+        "priceCurrency": "{{Currency}}",
+        "price": "0",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "{{2025-12-31}}",
+        "seller": { "@type": "Organization", "name": "{{Brand}}" },
+        "category": "FreeShipping",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": { "@type": "MonetaryAmount", "currency": "{{Currency}}", "value": "0" },
+          "shippingDestination": [
+            { "@type": "DefinedRegion", "addressCountry": "US" },
+            { "@type": "DefinedRegion", "addressCountry": "CA" },
+            { "@type": "DefinedRegion", "addressCountry": "GB" },
+            { "@type": "DefinedRegion", "addressCountry": "FR" }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Offer",
+        "@id": "https://{{your-domain}}/o/new-user-bonus",
+        "name": "New User Bonus: {{Currency}} {{Amount}} Off",
+        "url": "https://{{your-domain}}/go/{{brand}}-new-user-bonus",
+        "description": "Automatic discount for first purchase via app—no code required.",
+        "priceCurrency": "{{Currency}}",
+        "price": "0",
+        "availability": "https://schema.org/InStock",
+        "seller": { "@type": "Organization", "name": "{{Brand}}" },
+        "category": "IntroOffer"
+      }
+    }
+  ]
+}
+</script>
+
+  <!-- SCHEMA: FAQ (Highly Recommended for Coupons Pages) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://{{your-domain}}/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I use a {{Brand}} promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Copy a code on this page, add items to your cart at {{Brand}}, and paste the code at checkout under “Promo Code.” Press Apply to see the discount before paying."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do {{Brand}} coupons work on sale items?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some codes exclude clearance or bundles. Check each offer’s details—when allowed, stacking coupons with sale prices gives the biggest savings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often are {{Brand}} deals updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We update offers daily and remove expired codes quickly. Save the page or subscribe for alerts to catch flash sales."
+      }
+    }
+  ]
+}
+</script>
+
+  <link rel="stylesheet" href="/index.css">
+
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-Be1JtcFm.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'temu-orange': '#C25126', // Updated for better contrast
+            'temu-yellow': '#FFD23F',
+            'temu-dark': '#1a1a1a',
+          },
+          keyframes: {
+            pulse: {
+              '0%, 100%': { transform: 'scale(1)' },
+              '50%': { transform: 'scale(1.05)' },
+            },
+            wiggle: {
+              '0%, 100%': { transform: 'rotate(-3deg)' },
+              '50%': { transform: 'rotate(3deg)' },
+            },
+            bounce: {
+              '0%, 100%': { transform: 'translateY(-5%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+              '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' },
+            },
+            'gradient-flow': {
+              '0%, 100%': { 'background-position': '0% 50%' },
+              '50%': { 'background-position': '100% 50%' },
+            },
+          },
+          animation: {
+            pulse: 'pulse 2s infinite',
+            wiggle: 'wiggle 1s ease-in-out infinite',
+            bounce: 'bounce 1s infinite',
+            'gradient-flow': 'gradient-flow 15s ease infinite',
+          },
+        },
+      },
+    }
+  </script>
+</body>
+
+</html>
